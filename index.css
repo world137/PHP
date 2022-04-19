@@ -1,0 +1,98 @@
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.add{
+    margin-left: auto;
+    width: 10%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: larger;
+    text-align: center;
+    justify-content: center;
+}
+.input,.input2,.input3{
+    width: 90%;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+.siam{
+    position: relative;
+    height: 60%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+}
+.siam .card{
+    position: relative;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+.siam .card .cardcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.siam .card img{
+    border-radius: 10px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.siam .card .cardName{
+    position: relative;
+    font-weight: 100;
+    font-size: 1.5em;
+    color: var(--black1);
+}
+.siam .card .name{
+    color: var(--black1);
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+.siam .card .iconBx{
+    font-size: 1.5em;
+    color: var(--black2);
+}
+.siam .card:hover .cardName,
+.siam .card:hover .iconBx,
+.siam .card:hover .name{
+    color: var(--white);
+}
+.siam .card:hover{
+    background: var(--blue);
+}
+
+@media (max-width: 1400px){
+    .cardview{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+@media (max-width: 768px){
+    .cardview{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 540px) {
+    .cardview{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .add{
+        width: 15%;
+    }
+}
